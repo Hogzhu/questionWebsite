@@ -8,11 +8,13 @@
 <script>
 // @ is an alias to /src
 import QuestionList from '@/components/QuestionList.vue'
+import RankList from '@/components/RankList.vue'
 
 export default {
   name: 'MainPage',
   components: {
-    QuestionList
+    QuestionList,
+    RankList
   }
 }
 </script>
