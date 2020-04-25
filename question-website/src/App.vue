@@ -1,8 +1,11 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">主页</router-link>
+      <router-link to="/exam">考试</router-link>
+      <router-link to="/createQuestion">出题</router-link>
+      <router-link to="/rank">排行</router-link>
+      <router-link to="/login">登录</router-link>
     </div>
     <router-view/>
   </div>
@@ -13,17 +16,23 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 
 #nav {
-  padding: 30px;
-
+  display: flex;
+  padding: 1rem 10rem;
+  background-color: rgba(240,240,240,0.6);
+  box-shadow: 10px 5px 5px #eee;
   a {
     font-weight: bold;
     color: #2c3e50;
-
+    &:not(:first-child) {
+      margin-left: 5rem;
+    }
+    &:last-child {
+      margin-left: auto;
+    }
     &.router-link-exact-active {
       color: #42b983;
     }
