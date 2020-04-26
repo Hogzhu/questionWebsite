@@ -1,5 +1,0 @@
-<template>
-  <div class="rank">
-    <h1>This is an rank page</h1>
-  </div>
-</template>

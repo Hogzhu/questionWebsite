@@ -1,8 +1,10 @@
 <template>
   <div class="exam">
     <div class="exam-topText">自动出题或者自己定制!</div>
-    <AutoExam />
-    <CustomExam />
+    <div class="exam-card">
+      <AutoExam />
+      <CustomExam />
+    </div>
   </div>
 </template>
 <script>
@@ -20,10 +22,15 @@ export default {
 .exam {
   &-topText {
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 5rem;
     font-size: 2rem;
     letter-spacing: 1rem;
     font-weight: 600;
+  }
+  &-card {
+    display: flex;
+    margin-top : 2rem;
+    justify-content: center;
   }
 }
 </style>

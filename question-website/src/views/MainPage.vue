@@ -1,25 +1,27 @@
 <template>
   <div class="mainPage">
     <QuestionList />
-    <RankList />
+    <PersonalRank />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import QuestionList from '@/components/QuestionList.vue'
-import RankList from '@/components/RankList.vue'
+import PersonalRank from '@/components/PersonalRank.vue'
 
 export default {
   name: 'MainPage',
   components: {
     QuestionList,
-    RankList
+    PersonalRank
   }
 }
 </script>
 <style lang="less">
   .mainPage {
-    padding: 2rem 10rem;
+    padding: 2rem 5rem 0 5rem;
+    display: flex;
+    justify-content: space-between;
   }
 </style>

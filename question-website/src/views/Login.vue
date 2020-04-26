@@ -15,12 +15,13 @@
 </template>
 <style lang="less" scoped>
   .login {
-    padding: 0 10rem;
+    display: flex;
+    justify-content: center;
     &-container {
       display: flex;
       width: 30rem;
       height: 15rem;
-      margin: 10rem 23rem;
+      margin-top: 10rem;
       flex-direction: column;
       align-items: center;
       justify-content: center;

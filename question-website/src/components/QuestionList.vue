@@ -39,9 +39,11 @@ export default Vue.extend({
     msg: String
   },
   data () {
+    const question: Array<any> = []
+    const questionNum: Array<any> = []
     return {
-      question: [],
-      questionNum: []
+      question: question,
+      questionNum: questionNum
     }
   },
   mounted: function () {
@@ -67,7 +69,6 @@ export default Vue.extend({
         color: '#d9534f'
       }
       this.questionNum.push(allQuestion, easyQuestion, midQuestion, diffQuestion)
-      console.log(this.questionNum)
     },
     getQuestion: function () {
       const question1 = {
@@ -79,7 +80,7 @@ export default Vue.extend({
         type: '选择题'
       }
       const question2 = {
-        id: 1,
+        id: 2,
         title: '这是第二道简单简答题哦',
         edit: '87.5%',
         accept: '90.2%',
@@ -87,7 +88,7 @@ export default Vue.extend({
         type: '简答题'
       }
       const question3 = {
-        id: 1,
+        id: 3,
         title: '这是第三道简单选择题哦',
         edit: '95.7%',
         accept: '98.9%',
@@ -95,14 +96,62 @@ export default Vue.extend({
         type: '选择题'
       }
       const question4 = {
-        id: 1,
+        id: 4,
         title: '这是第四道中等简答题哦',
         edit: '84.5%',
         accept: '62.1%',
         difficult: '中等',
         type: '简答题'
       }
-      this.question.push(question1, question2, question3, question4)
+      const question5 = {
+        id: 5,
+        title: '这是第五道简单简答题哦',
+        edit: '52.5%',
+        accept: '62.1%',
+        difficult: '简单',
+        type: '简答题'
+      }
+      const question6 = {
+        id: 6,
+        title: '这是第六道困难简答题哦',
+        edit: '23.5%',
+        accept: '34.1%',
+        difficult: '困难',
+        type: '简答题'
+      }
+      const question7 = {
+        id: 7,
+        title: '这是第七道简单选择题哦',
+        edit: '84.5%',
+        accept: '85.9%',
+        difficult: '简单',
+        type: '选择题'
+      }
+      const question8 = {
+        id: 8,
+        title: '这是第八道中等选择题哦',
+        edit: '84.5%',
+        accept: '52.1%',
+        difficult: '中等',
+        type: '选择题'
+      }
+      const question9 = {
+        id: 9,
+        title: '这是第九道中等简答题哦',
+        edit: '57.5%',
+        accept: '79.1%',
+        difficult: '中等',
+        type: '简答题'
+      }
+      const question10 = {
+        id: 10,
+        title: '这是第十道简单简答题哦',
+        edit: '97.5%',
+        accept: '86.7%',
+        difficult: '简单',
+        type: '简答题'
+      }
+      this.question.push(question1, question2, question3, question4, question5, question6, question7, question8, question9, question10)
     }
   }
 })

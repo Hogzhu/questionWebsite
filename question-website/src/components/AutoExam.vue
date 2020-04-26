@@ -19,6 +19,48 @@ export default {
 </script>
 <style scoped lang="less">
 .autoExam {
-  text-align: center;
+  &-card {
+    display: inline-block;
+    box-shadow: 5px 5px 10px #ddd;
+    border-radius: 0.5rem;
+    transition:all 1s ease-out;
+    &-top {
+      width: 18rem;
+      height: 10rem;
+      background: url("https://assets.leetcode-cn.com/aliyun-lc-upload/explore/cards/array-and-string/img") no-repeat;
+      background-size: cover;
+      &-text {
+        padding: 0.4rem 0.8rem;
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 600;
+      }
+    }
+    &-bottom {
+      display: flex;
+      height: 5rem;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 600;
+      div {
+        padding: 0.8rem 1rem;
+        border-right: 1px solid #eee;
+        &:first-child {
+          color: #337ab7;
+        }
+        &:nth-child(2) {
+          color: #d9534f;
+        }
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px #ddd;
+      cursor: pointer;
+    }
+  }
 }
 </style>
