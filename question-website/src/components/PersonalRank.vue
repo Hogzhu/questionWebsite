@@ -40,7 +40,7 @@ export default {
           type: 'bar',
           stack: '完成情况',
           barWidth: '20',
-          data: [222, 333, 443, 437, 489, 500]
+          data: [222, 333, 443, 457, 489, 500]
         }]
       },
       pieCharts: {
@@ -60,8 +60,8 @@ export default {
             radius: '60%',
             center: ['60%', '50%'],
             data: [
-              { value: 233, name: '已完成' },
-              { value: 556, name: '未完成' }
+              { value: 300, name: '已完成' },
+              { value: 489, name: '未完成' }
             ],
             labelLine: {
               normal: {
@@ -71,7 +71,7 @@ export default {
             label: {
               normal: {
                 position: 'inner',
-                formatter: '{a}{b}{d}%',
+                formatter: '{a}{b}{c}个\n{d}%',
                 textStyle: {
                   fontSize: '12',
                   color: '#fff'

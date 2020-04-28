@@ -53,19 +53,19 @@ export default Vue.extend({
   methods: {
     getQuestionNum: function () {
       const allQuestion = {
-        text: '已解决' + 0 + '/' + 1632,
+        text: '已解决 ' + 300 + '/' + 789,
         color: '#337ab7'
       }
       const easyQuestion = {
-        text: '简单' + 889,
+        text: '简单 ' + 452,
         color: '#5cb85c'
       }
       const midQuestion = {
-        text: '中等' + 482,
+        text: '中等 ' + 216,
         color: '#f0ad4e'
       }
       const diffQuestion = {
-        text: '困难' + 365,
+        text: '困难 ' + 121,
         color: '#d9534f'
       }
       this.questionNum.push(allQuestion, easyQuestion, midQuestion, diffQuestion)

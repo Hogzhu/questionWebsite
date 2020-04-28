@@ -4,8 +4,8 @@
       <router-link to="/">主页</router-link>
       <router-link to="/exam">考试</router-link>
       <router-link to="/createQuestion">出题</router-link>
-      <router-link to="/rank">排行</router-link>
-      <router-link to="/login">登录</router-link>
+      <router-link to="/information">数据</router-link>
+      <a class="nav-login">登录</a>
     </div>
     <router-view/>
   </div>
@@ -21,7 +21,7 @@
 
 #nav {
   display: flex;
-  padding: 1rem 10rem;
+  padding: 1rem 5rem;
   background-color: rgba(240,240,240,0.6);
   box-shadow: 10px 5px 5px #eee;
   a {
