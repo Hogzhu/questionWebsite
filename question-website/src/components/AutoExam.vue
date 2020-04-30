@@ -12,9 +12,9 @@
     </div>
   </div>
 </template>
-<script>
-export default {
-  name: 'AutoExam'
+<script lang="ts">
+import { Vue, Component } from 'vue-property-decorator'
+export default class AutoExam extends Vue {
 }
 </script>
 <style scoped lang="less">

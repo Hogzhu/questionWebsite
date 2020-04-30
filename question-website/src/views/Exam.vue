@@ -7,15 +7,15 @@
     </div>
   </div>
 </template>
-<script>
+<script lang="ts">
+import { Vue, Component } from 'vue-property-decorator'
 import AutoExam from '@/components/AutoExam.vue'
 import CustomExam from '@/components/CustomExam.vue'
-export default {
+@Component({
   name: 'Exam',
-  components: {
-    AutoExam,
-    CustomExam
-  }
+  components: { AutoExam, CustomExam }
+})
+export default class Exam extends Vue {
 }
 </script>
 <style scoped lang="less">

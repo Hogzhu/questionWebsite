@@ -8,19 +8,17 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 // @ is an alias to /src
+import { Vue, Component } from 'vue-property-decorator'
 import QuestionList from '@/components/QuestionList.vue'
 import PersonalRank from '@/components/PersonalRank.vue'
 import Login from '@/components/Login.vue'
-
-export default {
+@Component({
   name: 'MainPage',
-  components: {
-    QuestionList,
-    PersonalRank,
-    Login
-  }
+  components: { QuestionList, PersonalRank, Login }
+})
+export default class MainPage extends Vue {
 }
 </script>
 <style lang="less">
